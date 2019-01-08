@@ -1,23 +1,42 @@
+import React, { Component } from 'react';
+
 import { createMaterialTopTabNavigator, createAppContainer } from 'react-navigation';
 
-import ReceitaResumo from '../pages/ReceitaResumo';
-import ReceitaIngredientes from '../pages/ReceitaIngredientes';
-import ReceitaModo from '../pages/ReceitaModo';
+import {ReceitaResumo} from '../pages/ReceitaResumo';
+import {ReceitaIngredientes} from '../pages/ReceitaIngredientes';
+import {ReceitaModo} from '../pages/ReceitaModo';
 
 const Abas = createMaterialTopTabNavigator({
     ReceitaResumo:
     {
-        screen: ReceitaResumo
+        screen:ReceitaResumo,
     },
 
     ReceitaIngredientes:
     {
-        screen: ReceitaIngredientes
+        screen:ReceitaIngredientes,
     },
 
     ReceitaModo:
     {
-        screen: ReceitaModo
+        screen:ReceitaModo,
+    },
+},
+{
+    animationEnabled: true,
+    tabBarOptions:
+    {
+        showIcon: false,
+        style:
+        {
+            backgroundColor: '#EEEEEE',
+        },
+        labelStyle:
+        {
+            fontSize: 14,
+        },
+        activeTintColor: '#333333',
+        inactiveTintColor: '#CCCCCC'
     }
 })
 

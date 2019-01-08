@@ -8,7 +8,7 @@
 import { createStackNavigator, createAppContainer } from 'react-navigation';
 
 import Lista from './src/pages/Lista';
-import Receita from './src/pages/Receita';
+import {Receita} from './src/pages/Receita';
 
 const Navegador = createStackNavigator({
   Lista:

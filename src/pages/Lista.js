@@ -6,7 +6,7 @@ import {
     StyleSheet
 } from 'react-native';
 
-import ReceitaItem from '../components/ReceitaItem';
+import {ReceitaItem} from '../components/ReceitaItem'
 
 export default class List extends Component
 {
