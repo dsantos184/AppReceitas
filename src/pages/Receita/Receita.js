@@ -46,11 +46,11 @@ export default class Receita extends Component
                 </TouchableHighlight>
 
                 <Image 
-                    source={{uri: 'https://img.itdg.com.br/tdg/images/recipes/000/115/197/262559/262559_original.jpg'}}
+                    source={{uri: this.props.navigation.state.params.data.imagem}}
                     style={styles.receitaImage}
                 />
                 
-                <Abas />
+                <Abas screenProps={this.props.navigation.state.params.data} />
             </View>
         )
     }

@@ -33,7 +33,7 @@ const Abas = createMaterialTopTabNavigator({
         },
         labelStyle:
         {
-            fontSize: 14,
+            fontSize: 12,
         },
         activeTintColor: '#333333',
         inactiveTintColor: '#CCCCCC'

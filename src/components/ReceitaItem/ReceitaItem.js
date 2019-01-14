@@ -8,7 +8,6 @@ import{
 
 import styles from './styles';
 
-
 const ReceitaItem = props => (
     <TouchableHighlight 
         style={styles.container}
@@ -30,6 +29,5 @@ const ReceitaItem = props => (
 
     </TouchableHighlight>
 )
-
 
 export default ReceitaItem; 

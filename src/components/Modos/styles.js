@@ -1,27 +1,15 @@
 import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
-    
     container:
     {
         flex: 1,
-        margin: 10,
     },
 
-    nome:
+    modos:
     {
-        fontSize: 24,
+        fontSize: 16,
         marginBottom: 10,
-    },
-
-    autor:
-    {
-        marginBottom: 10,
-    },
-
-    descricao:
-    {
-
     }
 });
 

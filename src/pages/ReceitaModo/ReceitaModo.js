@@ -2,8 +2,11 @@ import React, { Component } from 'react';
 
 import {
     View,
-    Text,
+    FlatList,
 } from 'react-native';
+
+import {Modos} from '../../components/Modos';
+import styles from './styles';
 
 export default class ReceitaModo extends Component
 {
@@ -14,8 +17,12 @@ export default class ReceitaModo extends Component
     render()
     {
         return(
-            <View>
-                <Text>oi</Text>
+            <View style={styles.container}>
+                <FlatList
+                    data={this.props.screenProps.modo}
+                    renderItem={({item})=><Modos data={item} />}
+                    keyExtractor={(item)=>item.key.toString()}
+                />
             </View>
         )
     }

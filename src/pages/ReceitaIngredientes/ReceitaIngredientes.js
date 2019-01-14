@@ -2,20 +2,28 @@ import React, { Component } from 'react';
 
 import {
     View,
-    Text,
+    FlatList,
 } from 'react-native';
+
+import styles from  './styles';
+import {Ingredientes} from '../../components/Ingredientes'
 
 export default class ReceitaIngredientes extends Component
 {
     static navigationOptions = () => ({
-        title: 'Ingredientes'
+        tabBarLabel: 'Ingredientes'
     })
 
     render()
     {
         return(
-            <View>
-                <Text>oi</Text>
+            <View style={styles.container}>
+                <FlatList
+                    data={this.props.screenProps.ingredientes}
+                    renderItem={({item}) =><Ingredientes data={item} />}
+                    style={styles.listIngredientes}
+                    keyExtractor={(item,index)=>item.key.toString()}
+                />
             </View>
         )
     }
